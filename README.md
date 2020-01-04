@@ -1,38 +1,51 @@
 
-# Easy Point of Sale
+# Point of Sale
 
-Easy Point Of Sale is a web-based application that is useful for the needs of grocery stalls, with not much product coverage and only has admin access rights as the manager of the point of sell.
-
-Inside there are features of updating, deleting, creating, and displaying products, categories and orders for each sale, the system is website based and is still in the design process.
+Point of sales - Frontend is an application in the form of a website for product management, and has a cashier system (point of sale), this application is made using React Js.
 ## Built With
 [![Express.js](https://img.shields.io/badge/reactjs-16.10.2-yellow?style=rounded-square)](https://expressjs.com/en/starter/installing.html) [![Node.js](https://img.shields.io/badge/materialui-4.5.1-greenstyle?rounded-square)](https://nodejs.org/) [![MySQL](https://img.shields.io/badge/reactrouterdom-5.1.2-blue?rounded-square)](https://www.npmjs.com/search?q=mysql) [![MySQL](https://img.shields.io/badge/reactnumberformat-1.19.0-red?rounded-square)](https://www.npmjs.com/package/body-parser) [![CORS](https://img.shields.io/badge/cors-2.8.5-lightgrey?style=rounded-square)](https://www.npmjs.com/package/cors) [![CORS](https://img.shields.io/badge/jsonwebtoken-8.5.1-yellowgreen?style=rounded-square)](https://www.npmjs.com/package/jsonwebtoken)
 
-## Requirements
-1. [Node JS](https://nodejs.org/en/download/)
-2. [React JS](https://reactjs.org/)
-3. Web Server (ex. localhost)
+## Features
+- List product or foods
+- CRUD
+- Search
+- Sort
+- Add / Remove Cart
+- History
 
 ## Getting Started
-Clone the project into local
+- Download and install [API Point-Of-Sales-App](https://github.com/afsori/API-Point-Of-Sales-App)
+- Run backend (API) in local with (xampp or other)
+- Git clone [Point-Of-Sales-Frontend](https://github.com/afsori/Point-Of-Sales-Frontend) or download zip
+- Open in your code editor (vscode, atom or other)
+- npm Install & npm start
+- The Application Runs on  **localhost:3000**
 
-Install all the npm packages. Go into the project folder and type the following command to install all npm packages
+## Stacks
 
-``npm install``
+- ReactJS 
+- Material UI
+- Apex Chart
 
-In order to run the application Type the following command
+## Dependencies
 
-``npm start``
+- react-router-dom
+- jsPDF
+- axios
+- sweatalert 2
+- reaviz
 
-The Application Runs on  **localhost:3000**
+## Screenshots
 
-## Application design
-1.  **Product**  Component : This Component displays a list of product. This Component gets the data from a json file in my other project in express JS check my repository *API Express Point of Sale*
+![Home](https://res.cloudinary.com/afsori/image/upload/v1578132798/POS-Point-of-sales/Image_12_ynnhja.png)
 
-2.  **Category**  Component : This Component Displays  category. This Component gets its data from a my other project in express JS check my repository *API Express Point of Sale*
+![Checkout](https://res.cloudinary.com/afsori/image/upload/v1578132797/POS-Point-of-sales/checkout_xz0eda.jpg)
+
+![Login](https://res.cloudinary.com/afsori/image/upload/v1578132797/POS-Point-of-sales/login_rp3z4j.jpg)
+
+![History](https://res.cloudinary.com/afsori/image/upload/v1578132797/POS-Point-of-sales/history_bdh9ri.jpg)
 
 
-## HTTP client
-**axios**  library is used to make HTTP Calls, Open source library which is currently the most booming to make HTTP requests because it has many advantages
+---
 
-## URL
-The application has just one url /customerlist which ties to  _Customers_  Component
+Copyright © 2020 by M. AFSORI
