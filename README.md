@@ -1,4 +1,4 @@
-# Point of Sale
+# Point of Sale - Frontend
 
 Point of sales - Frontend is an application in the form of a website for product management, and has a cashier system (point of sale), this application is made using React Js.
 
