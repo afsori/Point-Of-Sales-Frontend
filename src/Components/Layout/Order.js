@@ -54,7 +54,7 @@ class Order extends React.Component {
   sortby(by) {
     // console.log(by)
     axios
-      .get(`http://localhost:4000/product/sort?sortby=${by}`)
+      .get(`http://api-pos-1997.herokuapp.com/product/sort?sortby=${by}`)
       .then(res => {
         console.log(res, "sorting");
         this.setState({
@@ -65,7 +65,7 @@ class Order extends React.Component {
   }
   getProduct() {
     axios
-      .get("http://localhost:4000/product")
+      .get("http://api-pos-1997.herokuapp.com/product")
       .then(res => {
         console.log(res);
         this.setState({
@@ -135,7 +135,9 @@ class Order extends React.Component {
     // event.preventDefault();
     // const data = event.target.value;
     axios
-      .get(`http://localhost:4000/product/search?keyword=${e.target.value}`)
+      .get(
+        `http://api-pos-1997.herokuapp.com/product/search?keyword=${e.target.value}`
+      )
       .then(res => {
         console.log(res.data, "INI SEARCHING");
         this.setState({

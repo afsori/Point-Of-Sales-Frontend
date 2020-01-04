@@ -44,7 +44,7 @@ class ModalAdd extends React.Component {
       category: this.state.category
     };
     axios
-      .post("http://localhost:4000/product", data)
+      .post("http://api-pos-1997.herokuapp.com/product", data)
       .then(() => {
         Swal.fire(
           "Congratulations!",

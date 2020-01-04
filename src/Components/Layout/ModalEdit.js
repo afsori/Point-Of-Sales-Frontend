@@ -48,14 +48,17 @@ class ModalEdit extends React.Component {
       confirmButtonColor: "#3085d6",
       cancelButtonColor: "#d33",
       confirmButtonText: "Yes, delete it!"
-    }).then(result => {
-      if (result.value) {
-        axios.delete(`http://localhost:4000/product/${id_product}`).then(() => {
-          Swal.fire("Deleted!", "Your file has been deleted.", "success");
-          document.location.href = "/";
-        });
-      }
     })
+      .then(result => {
+        if (result.value) {
+          axios
+            .delete(`http://api-pos-1997.herokuapp.com/product/${id_product}`)
+            .then(() => {
+              Swal.fire("Deleted!", "Your file has been deleted.", "success");
+              document.location.href = "/";
+            });
+        }
+      })
       .catch(error => {
         console.log(error);
       });
@@ -74,7 +77,7 @@ class ModalEdit extends React.Component {
       category: this.state.category
     };
     axios
-      .put(`http://localhost:4000/product/${id_product}`, data)
+      .put(`http://api-pos-1997.herokuapp.com/product/${id_product}`, data)
       .then(() => {
         Swal.fire("Good job!", "Data successfully changed!", "success");
 

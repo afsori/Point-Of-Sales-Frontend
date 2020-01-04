@@ -75,7 +75,10 @@ class SignIn extends React.Component {
   onSubmitForm(e) {
     e.preventDefault();
     axios
-      .post(`http://localhost:3030/user/login`, this.state.dataPostLogin)
+      .post(
+        `http://api-pos-1997.herokuapp.com/user/login`,
+        this.state.dataPostLogin
+      )
       .then(res => {
         console.log(res.data.status);
         if (res.data.status !== 400) {

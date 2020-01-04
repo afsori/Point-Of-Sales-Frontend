@@ -98,7 +98,10 @@ class ModalCheckout extends React.Component {
     // console.log("ini checkout", checkout);
     // console.log(checkout, "ini chekout");
     axios
-      .post("http://localhost:4000/product/transaction", checkoutNew)
+      .post(
+        "http://api-pos-1997.herokuapp.com/product/transaction",
+        checkoutNew
+      )
       .then(() => {
         // Swal.fire(
         //   "Congratulations!",

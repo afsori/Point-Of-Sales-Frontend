@@ -38,7 +38,7 @@ class Login extends React.Component {
       password: this.state.password
     };
     axios
-      .post("http://localhost:4000/auth/signin", data)
+      .post("http://api-pos-1997.herokuapp.com/auth/signin", data)
       .then(res => {
         Swal.fire(
           "Congratulations!",

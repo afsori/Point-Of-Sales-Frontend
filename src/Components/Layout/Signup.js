@@ -65,7 +65,10 @@ class SignUp extends React.Component {
 
   onSubmitForm() {
     axios
-      .post(`http://localhost:3030/user/register`, this.state.dataPost)
+      .post(
+        `http://api-pos-1997.herokuapp.com/user/register`,
+        this.state.dataPost
+      )
       .then(res => {
         console.log(res);
       });

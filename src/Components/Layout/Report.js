@@ -121,7 +121,7 @@ class Report extends React.Component {
 
   getTransaction() {
     axios
-      .get("http://localhost:4000/product/transaction")
+      .get("http://api-pos-1997.herokuapp.com/product/transaction")
       .then(res => {
         console.log(res);
         this.setState({
