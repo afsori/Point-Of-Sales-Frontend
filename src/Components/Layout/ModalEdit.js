@@ -30,8 +30,10 @@ class ModalEdit extends React.Component {
       // id_product: "",
       quantity: "",
       description: "",
-
+      id_product: "",
       category: "",
+      image: "",
+      price: "",
       Tokens: localStorage.getItem("Token")
 
       // token: localStorage.getItem("jwt")
